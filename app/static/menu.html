@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RemBg</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav style="margin-bottom: 20px">
+      <button id="btnNew" class="nav-btn active">Видалити фон</button>
+      <button id="btnHistory" class="nav-btn">Моя історія</button>
+    </nav>
+    <div id="uploadSection">
+      <form id="uploadForm">
+        <input type="file" id="fileInput" accept="image/*" />
+        <button type="submit">Обробити</button>
+      </form>
+      <div class="container" id="currentResult">
+        <div id="originalBlock" class="hidden">
+          <img src="" id="originalImg" alt="original" />
+        </div>
+        <div id="resultBlock" class="hidden">
+          <img src="" id="resultImg" alt="result" />
+        </div>
+      </div>
+    </div>
+    <div id="gallerySection" class="hidden">
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </div>
+    <script src="/static/images.js" defer></script>
+  </body>
+</html>

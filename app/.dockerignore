@@ -1,0 +1,5 @@
+fastapienv
+__pycache__
+media
+.env
+.git

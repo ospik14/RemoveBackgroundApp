@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <form id="authForm">
+      <input type="email" id="emailInput" placeholder="email" required />
+      <input type="text" id="usernameInput" placeholder="username" required />
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="password"
+        required
+      />
+      <button type="submit">Register</button>
+      <a href="/static/login.html">Login</a>
+    </form>
+    <div id="errorMsg" style="color: red"></div>
+    <script src="/static/auth.js"></script>
+  </body>
+</html>

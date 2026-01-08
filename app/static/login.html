@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <form id="loginForm">
+      <input type="email" id="emailInput" placeholder="email" required />
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="password"
+        required
+      />
+      <button type="submit">Login</button>
+      <a href="/static/index.html">Register</a>
+    </form>
+    <div id="errorMsg" style="color: red"></div>
+    <script src="/static/login.js"></script>
+  </body>
+</html>

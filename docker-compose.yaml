@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  app:
+    build: ./app
+
+    container_name: removebg_app
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - ./app/.env
+
+    volumes:
+      - ./app/media:/app/media
+
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:qwerty@db:5432/repairhub_db
+
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: removebg_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: repairhub_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    
+  
+
+volumes:
+  postgres_data:
