@@ -38,7 +38,7 @@
 
 1. **Клонувати репозиторій:**
    ```bash
-   git clone [https://github.com/TviyNick/removebg-service.git](https://github.com/TviyNick/removebg-service.git)
+   git clone [https://github.com/ospik14/RemoveBackgroundApp.git](https://github.com/ospik14/RemoveBackgroundApp.git)
 
 2. **Запустити через Docker Compose:**
     ```bash
